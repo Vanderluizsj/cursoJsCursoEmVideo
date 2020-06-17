@@ -17,8 +17,8 @@
         document.write(`Bem vindo, ${nome.toUpperCase()}<br>`) 
         var n1=Number(window.prompt('Digite sua renda:'))
         n1 = n1.toFixed(2).replace('.',',')
-        //n1=n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) deveria mostrar R$ antes do numero
-        document.write('Sua renda é: ' + n1)
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) deveria mostrar R$ antes do numero
+        document.write('Sua renda é: ' + n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}))
         //toFixed() fixa em 2 casas após a virgula
         //relace() troca o primeiro item pelo segundo
         //toUperCase muda para maiusculo
